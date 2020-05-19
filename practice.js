@@ -35,7 +35,7 @@ $(() => {
       const sum = $(".en").get().reduce((s, e) => +e.value + s, 0);
       console.log(sum);
       if($(".en").length > 1){
-        $("#answer").append(`<p class="col-6 h2">合計：${sum}円</p>`);
+        $("#answer").append(`<p class="col-6 h4">合計：${sum}円</p>`);
       }
       const avg = Math.round(sum/classCount);
 
@@ -44,7 +44,7 @@ $(() => {
       let a = []
       let enBox = [];
       if($(".en").length > 1){
-        $("#answer").append(`<p class="col-6 h2">平均：${avg}円</p>`);
+        $("#answer").append(`<p class="col-6 h4">平均：${avg}円</p>`);
       }
       for(let i = 0; i<classCount; i++){
         let memberEn = $(".en").eq(i).val();
