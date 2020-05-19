@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>割り勘アプリ</title>
+    <link rel="shortcut icon" href="wario.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="top.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+  <div class="mx-auto bg-white container">
+    <div class="row">
+      <header class="bg-warning col-12">
+        <h1 class="text-white text-center p-3">WARIO</h1>
+      </header>
+    </div>
+    <div>
+      <h5 class="addMember m-3">メンバーを追加してください。</h5>
+    </div>
+    <div class="row mb-2">
+      <input type="text" id="member_add" class="form-control col-3 ml-4 mr-2" placeholder="Username" aria-label="Username" aria-describedby="button-addon2">
+      <button id="click_btn" class="btn btn-outline-secondary" type="button">+</button>
+    </div>
+    <table id="member_list" class="table">
+      <tr class="row">
+        <th class="col-6 px-md-5">名前</th>
+        <th class="col-6 px-md-5">金額</th>
+      </tr>
+    </table>
+    <div class="row text-center justify-content-center">
+      <button id="begin" type="button" class="btn btn-secondary btn-lg btn-block m-3 col-md-8">開始</button>
+    </div>
+    <div id="answer" class="row my-5">
+
+    </div>
+  </div>
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/c198d1d091.js" crossorigin="anonymous"></script>
+   <script src="practice.js"></script>
+</body>
+</html>
