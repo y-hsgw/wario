@@ -9,7 +9,7 @@ $(() => {
         alert("名前を入力してください");
         return false;
      };
-      $("#member_list").append(`<tr><td class="memberName">${member}</td><td><input class="en rounded border col-6 col-md-4 px-2" type="number" name="price"> 円<i class="fas fa-minus-circle text-secondary ml-3"></i></td></tr>`);
+      $("#member_list").append(`<tr><td class="memberName">${member}</td><td><input class="en rounded border col-6 col-md-4 px-2" type="number" name="price" min="0"> 円<i class="fas fa-minus-circle text-secondary ml-3"></i></td></tr>`);
       $('tr').addClass("row answer");
       $("tr td").addClass("col-6 px-md-5");
     });
@@ -29,6 +29,9 @@ $(() => {
         const MemberPrice = document.getElementsByClassName("en")[m].value;
         if(MemberPrice == "") {
           alert("金額を入力してください");
+          return false;
+        } else if(MemberPrice < 0) {
+          alert("マイナスは入力しないでください");
           return false;
         }
       };
